@@ -11,7 +11,7 @@ In-game properties will include:
 ## Reason of choice
 I personally loved hang man as a kid. It is one of the simple childhood games that I played the most. Therefore I wanted to challenge myself and create hang man on javascript.
 ---
-![Hang Man](Game.png)
+![Hang Man](Hang.png)
 ---
 ## WireFrame
 ![]()
