@@ -1,5 +1,5 @@
 # Typing_Speed_Game-Husain_Aljamri
-The world's fampuos hang man game but on java script!
+The world's famous hang man game but on java script!
 ## Goal of the game
 The goal of hang man is to guess all the correct letters before all the body parts have been added to the man.
 ## In-game stats
