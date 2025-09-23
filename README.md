@@ -14,4 +14,4 @@ I personally loved hang man as a kid. It is one of the simple childhood games th
 ![Hang Man](Hang.png)
 ---
 ## WireFrame
-![]()
+![Wireframe](Wireframe.png)
