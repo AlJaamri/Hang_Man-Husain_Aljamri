@@ -1,6 +1,6 @@
 body {
   background-color: antiquewhite;
-  color: white;
+  color: black;
   font-family: monospace;
   background-image: url("Images/Off-white-background-image.jpg");
 }
@@ -55,6 +55,7 @@ div.game {
   padding-bottom: 50px;
   text-shadow: 2px 2px 7px black;
   font-size: 25px;
+  color: white;
 }
 
 #img1 {

@@ -1,4 +1,6 @@
 const resetButton = document.getElementById("reset")
+const winOrLose = document.getElementById("winOrLose")
+winOrLose.innerText = "You Win!"
 const word = ""
 const alphabet = [
   "a",
