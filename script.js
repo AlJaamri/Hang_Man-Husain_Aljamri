@@ -91,5 +91,12 @@ const getWord = () => {
     .map(() => `<li class="letter"></li>`)
     .join("")
 }
+//reset button that will reset the page
+const resetButton = document.querySelector("#reset")
+
+resetButton.addEventListener("click", () => {
+  location.reload()
+})
+
 //Runs function
 getWord()
