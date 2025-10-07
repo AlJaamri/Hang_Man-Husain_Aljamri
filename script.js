@@ -1,4 +1,46 @@
 //Variable declaration
+const wordsToGuess = [
+  {
+    word: "house",
+    hint: "A place where people live.",
+  },
+  {
+    word: "computer",
+    hint: "Invention considered the first step into modern technology.",
+  },
+  {
+    word: "beach",
+    hint: "The place where land meets sea/ocean",
+  },
+  {
+    word: "ocean",
+    hint: "Term used to describe a very big body of water",
+  },
+  {
+    word: "school",
+    hint: "A place that people go to obtain knowledge",
+  },
+  {
+    word: "barcelona",
+    hint: "A city in spain",
+  },
+  {
+    word: "lakers",
+    hint: "An NBA team",
+  },
+  {
+    word: "liverpool",
+    hint: "The best football team in the world",
+  },
+  {
+    word: "japan",
+    hint: "Popular country in eastern asia",
+  },
+  {
+    word: "iphone",
+    hint: "Popular phone especially in Bahrain",
+  },
+]
 const resetButton = document.querySelector("#reset")
 const hangmanImage = document.querySelector("#hangPic")
 const mistakesMade = document.querySelector(".Mistakes b")
@@ -43,55 +85,14 @@ const clicked = (button, clickedLetter) => {
     mistakes++
     hangmanImage.src = `images/${mistakes}.svg`
   }
+  //disables button after being clicked
   button.disabled = true
   mistakesMade.innerText = `${mistakes} / ${maxMistakes}`
+  //checks if the mistakes have hit the mac to end the game
   if (mistakes === maxMistakes) return gameOver(false)
+  //checks if all the correct letters have been guessed to end the game
   if (correctletters.length === chosenWord.length) return gameOver(true)
 }
-
-//list of all words for the player to guess
-const wordsToGuess = [
-  {
-    word: "house",
-    hint: "A place where people live.",
-  },
-  {
-    word: "computer",
-    hint: "Invention considered the first step into modern technology.",
-  },
-  {
-    word: "beach",
-    hint: "The place where land meets sea/ocean",
-  },
-  {
-    word: "ocean",
-    hint: "Term used to describe a very big body of water",
-  },
-  {
-    word: "school",
-    hint: "A place that people go to obtain knowledge",
-  },
-  {
-    word: "barcelona",
-    hint: "A city in spain",
-  },
-  {
-    word: "lakers",
-    hint: "An NBA team",
-  },
-  {
-    word: "liverpool",
-    hint: "The best football team in the world",
-  },
-  {
-    word: "japan",
-    hint: "Popular country in eastern asia",
-  },
-  {
-    word: "iphone",
-    hint: "Popular phone especially in Bahrain",
-  },
-]
 //for loop to loop through all the letters of the alphabet and create buttons for each one
 for (let i = 97; i <= 122; i++) {
   const button = document.createElement("button")
