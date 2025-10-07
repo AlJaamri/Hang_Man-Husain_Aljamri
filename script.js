@@ -48,6 +48,7 @@ const clicked = (button, clickedLetter) => {
   if (correctletters.length === currentWord.length) return gameOver(true)
 }
 
+//list of all words for the player to guess
 const wordsToGuess = [
   {
     word: "house",
@@ -68,6 +69,26 @@ const wordsToGuess = [
   {
     word: "school",
     hint: "A place that people go to obtain knowledge",
+  },
+  {
+    word: "barcelona",
+    hint: "A city in spain",
+  },
+  {
+    word: "Lakers",
+    hint: "An NBA team",
+  },
+  {
+    word: "liverpool",
+    hint: "The best football team in the world",
+  },
+  {
+    word: "japan",
+    hint: "Popular country in eastern asia",
+  },
+  {
+    word: "iphone",
+    hint: "Popular phone especially in Bahrain",
   },
 ]
 //for loop to loop through all the letters of the alphabet and create buttons for each one
