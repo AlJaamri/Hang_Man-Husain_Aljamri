@@ -46,7 +46,7 @@ const clicked = (button, clickedLetter) => {
   button.disabled = true
   mistakesMade.innerText = `${mistakes} / ${maxMistakes}`
   if (mistakes === maxMistakes) return gameOver(false)
-  if (correctletters.length === currentWord.length) return gameOver(true)
+  if (correctletters.length === chosenWord.length) return gameOver(true)
 }
 
 //list of all words for the player to guess
