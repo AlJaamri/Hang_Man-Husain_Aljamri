@@ -1,4 +1,5 @@
 //Variable declaration
+const resetButton = document.querySelector("#reset")
 const hangmanImage = document.querySelector("#hangPic")
 const mistakesMade = document.querySelector(".Mistakes b")
 const hintDisplayed = document.querySelector(".hint b")
@@ -75,7 +76,7 @@ const wordsToGuess = [
     hint: "A city in spain",
   },
   {
-    word: "Lakers",
+    word: "lakers",
     hint: "An NBA team",
   },
   {
@@ -113,8 +114,6 @@ const getWord = () => {
     .join("")
 }
 //reset button that will reset the page
-const resetButton = document.querySelector("#reset")
-
 resetButton.addEventListener("click", () => {
   location.reload()
 })
