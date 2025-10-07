@@ -47,13 +47,13 @@ const mistakesMade = document.querySelector(".Mistakes b")
 const hintDisplayed = document.querySelector(".hint b")
 const alphabet = document.querySelector(".alphabet")
 const wordDisplayed = document.querySelector(".word")
+const winOrLoseText = document.querySelector("#winOrLose")
 let chosenWord
 let currentWord = 0
 let mistakes = 0
 let correctletters = []
 const maxMistakes = 6
 //Functions
-const winOrLoseText = document.querySelector("#winOrLose")
 
 const gameOver = (win) => {
   // Disable all alphabet buttons when the game ends
@@ -88,7 +88,7 @@ const clicked = (button, clickedLetter) => {
   //disables button after being clicked
   button.disabled = true
   mistakesMade.innerText = `${mistakes} / ${maxMistakes}`
-  //checks if the mistakes have hit the mac to end the game
+  //checks if the mistakes have hit the max to end the game
   if (mistakes === maxMistakes) return gameOver(false)
   //checks if all the correct letters have been guessed to end the game
   if (correctletters.length === chosenWord.length) return gameOver(true)
