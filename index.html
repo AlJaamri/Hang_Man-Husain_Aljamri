@@ -14,13 +14,15 @@
     </div>
     <div class="game">
       <div id="winOrLose"></div>
-      <div id="word"></div>
-      <div id="letters">
-        <!-- <button class="letter">A</button> <button class="letter">B</button>
-        <button class="letter">C</button> <button class="letter">D</button>
-        <button class="letter">E</button> <button class="letter">F</button> -->
+      <div class="word-container">
+        <img src="Images/0.svg" alt="Hangman stage" id="hangPic" />
+        <ul class="word"></ul>
       </div>
-      <div id="Mistakes">Mistakes made:</div>
+      <h3 class="hint">
+        <center>Hint: <b></b></center>
+      </h3>
+      <div class="alphabet"></div>
+      <div class="Mistakes">Mistakes <b>0 / 6</b></div>
       <div id="buttons">
         <center><button id="reset">Reset Game</button></center>
       </div>

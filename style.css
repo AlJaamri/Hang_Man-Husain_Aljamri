@@ -7,7 +7,6 @@ body {
 div.game {
   margin: 0 auto;
   width: 100%;
-  background-color: ;
 }
 #title1 {
   color: white;
@@ -23,19 +22,28 @@ div.game {
   font-size: 16px;
 }
 
-#letters {
+.alphabet {
   text-shadow: 2px 2px 7px black;
   text-align: center;
   padding-bottom: 100px;
   font-size: 30px;
+  display: flex;
+  gap: 5px;
 }
-
-.letter:hover {
+.alphabet button {
+  width: calc(100% / 9 - 5px);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+}
+.alphabet button:hover {
   background-color: antiquewhite;
 }
 #reset:hover {
   background-color: antiquewhite;
   box-shadow: 0px 0px 1px 2px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #word {
   color: black;
@@ -50,18 +58,50 @@ div.game {
   padding: 10px 20px 10px 20px;
 }
 
-#Mistakes {
+.Mistakes {
   text-align: center;
   padding-bottom: 50px;
   text-shadow: 2px 2px 7px black;
   font-size: 25px;
   color: white;
 }
-
+.Mistakes b {
+  color: red;
+  text-shadow: none;
+}
 #img1 {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 200px;
   height: 200px;
+}
+
+.word .letter.guessed {
+  border-color: transparent;
+  margin: -40px 0 35px;
+}
+
+.word .letter {
+  width: 28px;
+  border-bottom: 3px solid black;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+.word {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+#winOrLose {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 300;
 }
