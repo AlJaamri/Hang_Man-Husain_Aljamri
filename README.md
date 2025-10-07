@@ -1,5 +1,5 @@
 # Hang_Man-Husain_Aljamri
-![Hang Man](Hang.png)
+![Hang Man](Images/Hang.png)
 
 The world's famous hang man game but on java script!
 ## Goal of the game
@@ -13,4 +13,4 @@ In-game properties will include:
 ## Reason of choice
 I personally loved hang man as a kid. It is one of the simple childhood games that I played the most. Therefore I wanted to challenge myself and create hang man on javascript.
 ## WireFrame
-![Wireframe](Wireframe1.png)
+![Wireframe](Images/Wireframe1.png)
