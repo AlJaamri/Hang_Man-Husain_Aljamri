@@ -12,5 +12,7 @@ In-game properties will include:
 ---
 ## Reason of choice
 I personally loved hang man as a kid. It is one of the simple childhood games that I played the most. Therefore I wanted to challenge myself and create hang man on javascript.
+## Surge Link
+https://hangman-husain-aljamri.surge.sh/
 ## WireFrame
 ![Wireframe](Images/Wireframe1.png)
